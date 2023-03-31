@@ -6,6 +6,7 @@ import requests
 # 設置 Chrome 瀏覽器的選項
 options = webdriver.ChromeOptions()
 options.add_argument("--headless")  # 選項可以在背景運行 Chrome
+options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
 # 指定 Chrome 瀏覽器驅動程式的路徑，下載位置可能與您的位置不同
 driver_path = 'chromedriver.exe'
