@@ -77,7 +77,8 @@ while True:
         
         # 休眠 1 分鐘
     print("\n\n一分鐘後繼續執行\n\n")
+            
+    # 關閉 Chrome 瀏覽器驅動程式
+    driver.quit()
+
     time.sleep(60)
-        
-        # 關閉 Chrome 瀏覽器驅動程式
-driver.quit()
