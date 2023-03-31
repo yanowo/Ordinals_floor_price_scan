@@ -40,10 +40,12 @@ OW_xpath = '/html/body/div[3]/div/div[2]/div/div[1]/div[2]/div'
 OS_xpath = '//*[@id="root"]/div/div[4]/div/div/div/div[1]/div/div[1]/div[2]/div[2]/div/p'
 ME_xpath = '//*[@id="content"]/div/div[1]/div/div[2]/div[2]/div[1]/div/div[1]/div[2]/div[2]/span'
 
-# 初始化 Chrome 瀏覽器驅動程式
-driver = webdriver.Chrome(executable_path=driver_path, options=options)
+
 print("\n-----開始執行-----")
 while True:
+    
+    # 初始化 Chrome 瀏覽器驅動程式
+    driver = webdriver.Chrome(executable_path=driver_path, options=options)
     
     # 初始化警告訊息列表
     warning_messages = []
@@ -77,8 +79,8 @@ while True:
         
         # 休眠 1 分鐘
     print("\n\n一分鐘後繼續執行\n\n")
-            
+    
     # 關閉 Chrome 瀏覽器驅動程式
     driver.quit()
-
+    
     time.sleep(60)
